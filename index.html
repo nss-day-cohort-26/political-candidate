@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="main.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <!-- Article component for congressional representative with a unique id attribute -->
+  <article id="congressional-rep">
+
+    <!-- Section component for providing the basic information of the candidate(representative's image, name, district info, and political affiliation) -->
+    <section class="rep-info">
+      <h3 class="rep-info__heading">Jim Cooper</h3>
+      <img src="https://www.govtrack.us/data/photos/400081-100px.jpeg" alt="" class="rep-info__img">
+      <p class="rep-info__desc">Representative for Tennessee's 5th congressional district</p>
+      <p class="rep-info__affiliation">Democrat</p>
+    </section>
+    
+    <!-- Section component for listing any committees the candidate is serving on -->
+    <section class="rep-committees">
+      <h3 class="rep-committees__heading">Committees</h3>
+      <ul class="rep-committees__list">
+        <li>House Committee on Armed Services</li>
+        <li>Strategic Forces</li>
+        <li>Emerging Threats and Capabilities</li>
+      </ul>
+    </section>
+
+    <!-- Section component for listing links to any legislation that your representative has enacted -->
+    <section class="rep-legislations">
+      <h3 class="rep-legislations__heading">Legislations</h3>
+      <ul class="rep-legislations__list">
+        <li class="rep-legislations__listitem">
+          <a href="https://www.govtrack.us/congress/bills/112/hr482">H.R. 482 (112th): Water Heater Rating Improvement Act of 2011</a>
+        </li>
+        <li class="rep-legislations__listitem">
+            <a href="https://www.govtrack.us/congress/bills/110/hr928">H.R. 928 (110th): Inspector General Reform Act of 2008</a>
+        </li>
+        <li class="rep-legislations__listitem--blue">
+          <a href="https://www.govtrack.us/congress/bills/103/hjres297">H.J.Res. 297 (103rd): To designate 1994 as “The Year of Gospel Music”.</a>
+        </li>
+      </ul>
+    </section>
+  </article>
+
+  <script src="main.js"></script>
+</body>
+</html>
